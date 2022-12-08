@@ -7,18 +7,18 @@ import Skills from '../components/Skills'
 
 
 export default function Home() {
-  return (
-    <div>
-      <Head>
-        <title>Clint | Front-End Developer</title>
-        <meta name="description" content="I’m a front-end web developer specializing in building (and occasionally designing) exceptional digital experiences." />
-        <link rel="icon" href="/fav.png" />
-      </Head>
-    <Main />
-    <About />
-    <Skills />
-    <Projects />
-    <Contact />
-    </div>
-  )
-}
+    return (
+      <div>
+        <Head>
+          <title>Vikas | Back-End Developer</title>
+          <meta name="description" content="I’m a back-end web developer specializing in building backend API's." />
+          <link rel="icon" href="/fav.png" />
+        </Head>
+        <Main/>
+        <About/>
+        <Skills/>
+        <Projects/>
+        <Contact/>
+      </div>
+    )
+  }

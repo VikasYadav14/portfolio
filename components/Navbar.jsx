@@ -4,7 +4,7 @@ import React, { useState, useEffect } from 'react';
 import { AiOutlineClose, AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
-// import { useRouter } from 'next/router';
+import { useRouter } from 'next/router';
 import NavLogo from '../public/assets/navLogo.png'
 
 const Navbar = () => {
@@ -13,22 +13,22 @@ const Navbar = () => {
   const [navBg, setNavBg] = useState('#ecf0f3');
   const [linkColor, setLinkColor] = useState('#1f2937');
   // const [position, setPosition] = useState('fixed')
-  // const router = useRouter();
+  const router = useRouter();
 
-  // useEffect(() => {
-  //   if (
-  //     router.asPath === '/property' ||
-  //     router.asPath === '/crypto' ||
-  //     router.asPath === '/netflix' ||
-  //     router.asPath === '/twitch'
-  //   ) {
-  //     setNavBg('transparent');
-  //     setLinkColor('#ecf0f3');
-  //   } else {
-  //     setNavBg('#ecf0f3');
-  //     setLinkColor('#1f2937');
-  //   }
-  // }, [router]);
+  useEffect(() => {
+    if (
+      router.asPath === '/blogging' ||
+      router.asPath === '/book-management' ||
+      router.asPath === '/url-shortener' ||
+      router.asPath === '/shopping'
+    ) {
+      setNavBg('transparent');
+      setLinkColor('#ecf0f3');
+    } else {
+      setNavBg('#ecf0f3');
+      setLinkColor('#1f2937');
+    }
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -56,7 +56,6 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <a>
             <Image
               src={NavLogo}
               alt='/'
@@ -64,7 +63,6 @@ const Navbar = () => {
               height='50'
               className='cursor-pointer'
             />
-          </a>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
@@ -116,14 +114,12 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                <a>
                   <Image
                     src={NavLogo}
                     width='87'
                     height='35'
                     alt='/'
                   />
-                </a>
               </Link>
               <div
                 onClick={handleNav}
@@ -177,7 +173,7 @@ const Navbar = () => {
               </p>
               <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                 <a
-                  href='https://www.linkedin.com/in/clint-briley-50056920a/'
+                  href='https://www.linkedin.com/in/imvikasyadav'
                   target='_blank'
                   rel='noreferrer'
                 >
@@ -186,7 +182,7 @@ const Navbar = () => {
                   </div>
                 </a>
                 <a
-                  href='https://github.com/fireclint'
+                  href='https://github.com/VikasYadav14'
                   target='_blank'
                   rel='noreferrer'
                 >

@@ -13,22 +13,20 @@ const About = () => {
           </p>
           <h2 className='py-4'>Who I Am</h2>
           <p className='py-2 text-gray-600'>
-            I specialize in building mobile responsive front-end UI applications
-            that connect with API’s and other backend technologies. I’m
-            passionate about learning new technologies and understand there is
-            more than one way to accomplish a task. Though I am most proficient
-            in building front-end applications using HTML, CSS, Javascript, and
-            React, I am a quick learner and can pick up new tech stacks as
-            needed. I believe that being a great developer is not using one
-            specific language, but choosing the best tool for the job.
+            I am a Backend Developer trainee at functionUp. During my training, 
+            I have completed 5+ projects using Backend technologies. Talking about 
+            my Technical skills - I am skilled in JavaScript, NodeJs, Expressjs, 
+            MongoDB, AWS S3, Redis, Mysql, Python, Java and some tools - VS Code, Postman.
+            I specialize in building responsive back-end API&apos;s that connect with front end applications.
           </p>
           <p className='py-2 text-gray-600'>
-            I started web developement in 2013 managing multiple e-commerce
-            websites on CMS platforms such as WordPress, BigCommerce, and
-            Shopify. I have experience working directly with clients and taking
-            mock wireframes all the way to deployed applications. In my spare
-            time I run Code Commerce, a Youtube channel where I teach web
-            developement and various front-end technologies.
+            I’m passionate about learning new technologies and understand there is
+            more than one way to accomplish a task. Though I am most proficient
+            in building back-end applications using NodeJS, MongoDb, Javascript, and
+            Mysql, I am a quick learner and can pick up new tech stacks as
+            needed. I believe that being a great developer is not using one
+            specific language, but choosing the best tool for the job.
+            
           </p>
           <Link href='/#projects'>
             <p className='py-2 text-gray-600 underline cursor-pointer'>

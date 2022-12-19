@@ -27,24 +27,25 @@ const shoppingCart = () => {
           <p>Project</p>
           <h2>Overview</h2>
           <p>
-            
+            This backend code was built using NodeJS, JavaScript, express as framework, used MongoDb 
+            as a DataBase and stored product image on AWS. Users are able to add, delete products in cart give reviews 
+            of product after creating account and login. To find perfect product users can filtered 
+            according to their interest. Admin has different access. he/she can add, delete  product and edit 
+            product details . Both admin and local user has authentication and authorization. so admin can manipulate 
+            on their added products and local user can see only their selected product in his/her cart.
+          </p>
+          <p>
+            For more info about the project checkout the Github link given below
           </p>
           <a
-            href='https://github.com/VikasYadav14/project-5_paymentMode'
+            href='https://github.com/VikasYadav14/E-Commerce'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Demo</button>
           </a>
-          {/* <a
-            href='https://github.com/VikasYadav14/project-5_paymentMode'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4'>Code</button>
-          </a> */}
-
-        </div>
+          </div>
+          
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Tools & Technologies</p>

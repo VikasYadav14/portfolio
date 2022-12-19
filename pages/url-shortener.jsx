@@ -31,21 +31,18 @@ const urlShortener = () => {
           URL from big and heavy link. Basically, we have created 2 Api&apos;s one for create 
           short link and another one for Get the link. Here we have using caching method to reduce response time.
           </p>
+          <p>
+            For more info about the project checkout the Github link given below
+          </p>
           <a
-            href='https://github.com/fireclint/netflix-react-tailwind'
+            href='https://github.com/VikasYadav14/Url-Shortener'
             target='_blank'
             rel='noreferrer'
           >
             <button className='px-8 py-2 mt-4 mr-8'>Code</button>
           </a>
-          {/* <a
-            href='https://fireclint.github.io/netflix-react-tailwind/'
-            target='_blank'
-            rel='noreferrer'
-          >
-            <button className='px-8 py-2 mt-4'>Demo</button>
-          </a> */}
         </div>
+        
         <div className='col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl py-4'>
           <div className='p-2'>
             <p className='text-center font-bold pb-2'>Tools & Technologies</p>

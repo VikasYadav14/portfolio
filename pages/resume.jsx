@@ -3,7 +3,6 @@ import Head from 'next/head';
 import { FaGithub, FaLinkedinIn, FaDownload } from 'react-icons/fa';
 import Image from 'next/image';
 import ResumeImg from '../public/resume.jpg';
-// import ResumePdf from '../public/assets/resume.pdf';
 
 const resume = () => {
   return (
@@ -36,9 +35,9 @@ const resume = () => {
             >
               <FaGithub size={20} style={{ marginRight: '1rem' }} />
             </a>
-            {/* <a href={ResumeImg} download={ResumeImg}>
+            <a href='Vikas_Resume.pdf' download>
               <FaDownload size={20} style={{ marginRight: '1rem' }} />
-            </a> */}
+            </a>
           </div>
         </div>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">

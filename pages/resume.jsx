@@ -23,6 +23,7 @@ const resume = () => {
           <div className="flex">
             <a
               href="https://www.linkedin.com/in/imvikasyadav"
+              title='LinkedIn'
               target="_blank"
               rel="noreferrer"
             >
@@ -30,18 +31,19 @@ const resume = () => {
             </a>
             <a
               href="https://github.com/VikasYadav14"
+              title='GitHub'
               target="_blank"
               rel="noreferrer"
             >
               <FaGithub size={20} style={{ marginRight: '1rem' }} />
             </a>
-            <a href='Vikas_Resume.pdf' download>
+            <a href='Vikas_Resume.pdf' download title='Download Resume'>
               <FaDownload size={20} style={{ marginRight: '1rem' }} />
             </a>
           </div>
         </div>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
-          <Image src={ResumeImg} className="rounded-xl" alt="/" />
+          <Image src={ResumeImg} className="rounded-xl" alt="Vikas_Resume" title='Vikas_Resume'/>
         </div>
       </div>
     </>

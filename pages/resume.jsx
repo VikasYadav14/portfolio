@@ -2,7 +2,7 @@ import React from 'react';
 import Head from 'next/head';
 import { FaGithub, FaLinkedinIn, FaDownload } from 'react-icons/fa';
 import Image from 'next/image';
-import ResumeImg from '../public/resume.jpg';
+import ResumeImg from '../public/Resume.jpg';
 
 const resume = () => {
   return (
@@ -37,7 +37,7 @@ const resume = () => {
             >
               <FaGithub size={20} style={{ marginRight: '1rem' }} />
             </a>
-            <a href='Vikas_Resume.pdf' download title='Download Resume'>
+            <a href='Resume.pdf' download='Vikas_Resume.pdf' title='Download Resume'>
               <FaDownload size={20} style={{ marginRight: '1rem' }} />
             </a>
           </div>

@@ -1,5 +1,5 @@
 import Navbar from '../components/Navbar';
-// import ChatBot from '../components/chatBot'
+import ChatBot from '../components/chatBot'
 import '../styles/globals.css';
 
 function MyApp({ Component, pageProps }) {
@@ -7,7 +7,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <Navbar />
       <Component {...pageProps} />
-      {/* <ChatBot /> */}
+      <ChatBot />
     </>
   );
 }

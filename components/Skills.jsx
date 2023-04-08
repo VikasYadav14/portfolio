@@ -11,7 +11,7 @@ import Postman from '../public/assets/skills/postman.png';
 import Reddis from '../public/assets/skills/redis.png';
 import AWS from '../public/assets/skills/aws.png';
 import HTML from '../public/assets/skills/html.png';
-import CSS from '../public/assets/skills/CSS.png'
+import CSS from '../public/assets/skills/css.png'
 import Tailwind from '../public/assets/skills/tailwind.png';
 import ReactImg from '../public/assets/skills/react.png';
 import Next from '../public/assets/skills/nextjs.png';

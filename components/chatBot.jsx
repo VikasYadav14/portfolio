@@ -5,6 +5,7 @@ import AboutImg from '../public/assets/about.jpg';
 import { AiOutlineClose, AiOutlineMail } from 'react-icons/ai';
 import { FaDownload, FaGithub, FaLinkedinIn, FaTelegramPlane, FaWhatsapp } from 'react-icons/fa';
 import Link from 'next/link';
+import LoadingImg from '../public/assets/dots-loading.gif'
 
 const ChatBot = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,9 +26,16 @@ const ChatBot = () => {
       ...prevConversation,
       { role: 'user', content: userInput },
     ]);
+    setConversation((prevConversation) => [
+      ...prevConversation,
+      { role: 'loading', content: <Image src={LoadingImg} alt='/' height='20' width='24'></Image> },
+    ]);
 
     const botResponse = getBotResponse(userInput);
     setTimeout(() => {
+      setConversation((prevConversation) =>
+      prevConversation.filter((message) => message.role !== 'loading')
+    );
       setConversation((prevConversation) => [
         ...prevConversation,
         { role: 'bot', content: botResponse },
@@ -39,7 +47,7 @@ const ChatBot = () => {
     const BOT_RESPONSES = {
       hello: {
         content: (<>
-          <p>Hi!👋 I am chatBot created by Vikas Yadav. what you want to know</p>
+          <p>Hi!👋 I am chatBot created by Vikas Yadav. what you want to know❓</p>
           <ul >
             <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('About') }}>About</ol>
             <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
@@ -51,7 +59,7 @@ const ChatBot = () => {
       }
       ,
       hi: {content:(<>
-        <p>Hello!👋 I am chatBot created by Vikas Yadav. what you want to know</p>
+        <p>Hello!👋 I am chatBot created by Vikas Yadav. what you want to know❓</p>
         <ul >
           <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('About') }}>About</ol>
           <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
@@ -64,7 +72,7 @@ const ChatBot = () => {
       techstack:{content: 'Common Techstack 👨‍💻 i used Javascript, NodeJs, ExpressJs, MongoDB, NextJs'},
       projects: {content:(
         <>
-          <p>Hello! Here&apos;s are my projects to know more click to the name of projects</p>
+          <p>Here&apos;s are my projects to know more click to the name of projects</p>
           <ul >
             <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/blogging'>Blogging Backend</Link></ol>
             <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/shopping'>E-commerce</Link></ol>

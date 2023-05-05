@@ -49,24 +49,24 @@ const ChatBot = () => {
         content: (<>
           <p>Hi!👋 I am chatBot created by Vikas Yadav. what you want to know❓</p>
           <ul >
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('About') }}>About</ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Projects') }}>Projects</ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Resume') }}>Resume</ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Contact') }}>Contact</ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Social Media') }}>Social Media</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('About') }}>About</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Projects') }}>Projects</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Resume') }}>Resume</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Contact') }}>Contact</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Social Media') }}>Social Media</ol>
           </ul></>)
       }
       ,
       hi: {content:(<>
         <p>Hello!👋 I am chatBot created by Vikas Yadav. what you want to know❓</p>
         <ul >
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('About') }}>About</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Projects') }}>Projects</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Resume') }}>Resume</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Contact') }}>Contact</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600' onClick={() => { handleSendMessage('Social Media') }}>Social Media</ol>
+          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('About') }}>About</ol>
+          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
+          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Projects') }}>Projects</ol>
+          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Resume') }}>Resume</ol>
+          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Contact') }}>Contact</ol>
+          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Social Media') }}>Social Media</ol>
         </ul></>)},
       about:{content: 'I am a Backend Developer trainee at functionUp with experience in completing 5+ projects using technologies such as JavaScript, NodeJs, Expressjs, MongoDB, AWS S3, Redis, Mysql, Python, Java, and tools like VS Code and Postman. I specialize in building responsive back-end APIs that connect with front-end applications. I am passionate about learning new technologies and believe that choosing the best tool for the job is essential in being a great developer.'},
       techstack:{content: 'Common Techstack 👨‍💻 i used Javascript, NodeJs, ExpressJs, MongoDB, NextJs'},
@@ -97,7 +97,7 @@ const ChatBot = () => {
           <p>Contact me 😊</p>
           <div className="flex">
             <a
-              href="https://api.whatsapp.com/send/?phone=7703990035&text=Hi..&type=phone_number&app_absent=0"
+              href="https://api.whatsapp.com/send/?phone=7703990035&text=Hello%20Vikas&type=phone_number&app_absent=0"
               target="_blank"
               rel="noreferrer"
               title='WhatsApp'

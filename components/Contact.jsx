@@ -56,7 +56,7 @@ const Contact = () => {
                     </div>
                   </a>
                   <a
-                    href="https://api.whatsapp.com/send/?phone=7703990035&text=Hi..&type=phone_number&app_absent=0"
+                    href="https://api.whatsapp.com/send/?phone=7703990035&text=Hello%20Vikas&type=phone_number&app_absent=0"
                     target="_blank"
                     rel="noreferrer"
                   >

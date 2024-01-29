@@ -1,10 +1,21 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Head from 'next/head';
 import { FaGithub, FaLinkedinIn, FaDownload } from 'react-icons/fa';
 import Image from 'next/image';
 import ResumeImg from '../public/Vikas_Resume.jpg';
+import Alert from '../components/Alert';
 
-const resume = () => {
+const Resume = () => {
+  const [showAlert, setShowAlert] = useState(false);
+
+  useEffect(() => {
+    setShowAlert(true);
+  }, []);
+
+  const closeAlert = () => {
+    setShowAlert(false);
+  };
+
   return (
     <>
       <Head>
@@ -15,7 +26,8 @@ const resume = () => {
         />
         <link rel="icon" href="/fav.png" />
       </Head>
-
+      {showAlert && <Alert onClose={closeAlert} />}
+      <div>
       <div className="max-w-[940px] mx-auto p-2 pt-[120px]">
         <h2 className="text-center">Resume</h2>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
@@ -43,11 +55,12 @@ const resume = () => {
           </div>
         </div>
         <div className="bg-[#d0d4d6] my-4 p-4 w-full flex justify-between items-center">
-          <Image src={ResumeImg} className="rounded-xl" alt="Vikas_Resume" title='Vikas_Resume'/>
+          <Image src={ResumeImg} className="rounded-xl" alt="Vikas_Resume" title='Vikas_Resume' />
         </div>
+      </div>
       </div>
     </>
   );
 };
 
-export default resume;
+export default Resume;

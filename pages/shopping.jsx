@@ -4,7 +4,7 @@ import shoppingImg from '../public/assets/projects/shopping-cart.jpg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const shoppingCart = () => {
+const ShoppingCart = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -79,4 +79,4 @@ const shoppingCart = () => {
   );
 };
 
-export default shoppingCart;
+export default ShoppingCart;

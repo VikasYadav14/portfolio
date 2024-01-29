@@ -4,7 +4,7 @@ import urlImg from '../public/assets/projects/Url-shortener.jpeg';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
-const urlShortener = () => {
+const UrlShortener = () => {
   return (
     <div className='w-full'>
       <div className='w-screen h-[50vh] relative'>
@@ -73,4 +73,4 @@ const urlShortener = () => {
   );
 };
 
-export default urlShortener;
+export default UrlShortener;

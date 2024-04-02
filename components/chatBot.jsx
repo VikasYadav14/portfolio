@@ -34,8 +34,8 @@ const ChatBot = () => {
     const botResponse = getBotResponse(userInput);
     setTimeout(() => {
       setConversation((prevConversation) =>
-      prevConversation.filter((message) => message.role !== 'loading')
-    );
+        prevConversation.filter((message) => message.role !== 'loading')
+      );
       setConversation((prevConversation) => [
         ...prevConversation,
         { role: 'bot', content: botResponse },
@@ -58,82 +58,92 @@ const ChatBot = () => {
           </ul></>)
       }
       ,
-      hi: {content:(<>
-        <p>Hello!👋 I am chatBot created by Vikas Yadav. what you want to know❓</p>
-        <ul >
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('About') }}>About</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Projects') }}>Projects</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Resume') }}>Resume</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Contact') }}>Contact</ol>
-          <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Social Media') }}>Social Media</ol>
-        </ul></>)},
-      about:{content: 'I am a Backend Developer trainee at functionUp with experience in completing 5+ projects using technologies such as JavaScript, NodeJs, Expressjs, MongoDB, AWS S3, Redis, Mysql, Python, Java, and tools like VS Code and Postman. I specialize in building responsive back-end APIs that connect with front-end applications. I am passionate about learning new technologies and believe that choosing the best tool for the job is essential in being a great developer.'},
-      techstack:{content: 'Common Techstack 👨‍💻 i used Javascript, NodeJs, ExpressJs, MongoDB, NextJs'},
-      projects: {content:(
-        <>
-          <p>Here&apos;s are my projects to know more click to the name of projects</p>
+      hi: {
+        content: (<>
+          <p>Hello!👋 I am chatBot created by Vikas Yadav. what you want to know❓</p>
           <ul >
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/blogging'>Blogging Backend</Link></ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/shopping'>E-commerce</Link></ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/book-management'>Book Management</Link></ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/url-shortener'>Url Shortener</Link></ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><a href='https://quizers.vercel.app/' target='_blank' rel='noreferrer'>Quizers</a></ol>
-            <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><a href='https://github.com/VikasYadav14/job_board_website' target='_blank' rel='noreferrer'>Job-board Backend</a></ol>
-          </ul>
-        </>
-      )},
-      resume: {content:(<a
-        href="Vikas_Resume.pdf"
-        download
-        title="Download Resume"
-        className="flex bg-red-500 rounded-md text-white w-fit p-2"
-      >
-        Download Resume &nbsp;
-        <FaDownload size={20} style={{ marginRight: '1rem' }} />
-      </a>)},
-      contact: {content:(
-        <>
-          <p>Contact me 😊</p>
-          <div className="flex">
-            <a
-              href="https://api.whatsapp.com/send/?phone=7703990035&text=Hello%20Vikas&type=phone_number&app_absent=0"
-              target="_blank"
-              rel="noreferrer"
-              title='WhatsApp'
-            >
-              <FaWhatsapp size={20} style={{ marginRight: '1rem' }} />
-            </a>
-            <a><Link href='/#contact'>
-              <AiOutlineMail size={20} style={{ marginRight: '1rem' }} /></Link>
-            </a>
-          </div></>
-      )}
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('About') }}>About</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('TechStack') }}>TechStack</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Projects') }}>Projects</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Resume') }}>Resume</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Contact') }}>Contact</ol>
+            <ol className='text-indigo-400 font-semibold hover:text-indigo-600 cursor-pointer' onClick={() => { handleSendMessage('Social Media') }}>Social Media</ol>
+          </ul></>)
+      },
+      about: { content: 'As a full-stack developer specializing in responsive web applications, I prioritize learning new technologies and adaptability. Proficient in HTML, CSS, JavaScript, MERN, and MEAN stacks, I choose the best tools for each project. With experience since 2022, I excel in client collaboration, from wireframes to deployment.' },
+      techstack: { content: 'Common Techstack 👨‍💻 i used Javascript, NodeJs, ExpressJs, MongoDB, NextJs' },
+      projects: {
+        content: (
+          <>
+            <p>Here&apos;s are my projects to know more click to the name of projects</p>
+            <ul >
+              <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/blogging'>Blogging Backend</Link></ol>
+              <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/shopping'>E-commerce</Link></ol>
+              <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/book-management'>Book Management</Link></ol>
+              <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><Link href='/url-shortener'>Url Shortener</Link></ol>
+              <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><a href='https://quizers.vercel.app/' target='_blank' rel='noreferrer'>Quizers</a></ol>
+              <ol className='text-indigo-400 font-semibold hover:text-indigo-600'><a href='https://github.com/VikasYadav14/job_board_website' target='_blank' rel='noreferrer'>Job-board Backend</a></ol>
+            </ul>
+          </>
+        )
+      },
+      resume: {
+        content: (<a
+          href="Vikas_Resume.pdf"
+          download
+          title="Download Resume"
+          className="flex bg-red-500 rounded-md text-white w-fit p-2"
+        >
+          Download Resume &nbsp;
+          <FaDownload size={20} style={{ marginRight: '1rem' }} />
+        </a>)
+      },
+      contact: {
+        content: (
+          <>
+            <p>Contact me 😊</p>
+            <div className="flex">
+              <a
+                href="https://api.whatsapp.com/send/?phone=7703990035&text=Hello%20Vikas&type=phone_number&app_absent=0"
+                target="_blank"
+                rel="noreferrer"
+                title='WhatsApp'
+              >
+                <FaWhatsapp size={20} style={{ marginRight: '1rem' }} />
+              </a>
+              <a><Link href='/#contact'>
+                <AiOutlineMail size={20} style={{ marginRight: '1rem' }} /></Link>
+              </a>
+            </div></>
+        )
+      }
       ,
-      'social media': {content:(
-        <>
-          <p>Here&apos;s are my social media links😎</p>
-          <div className="flex justify-center">
-            <a
-              href="https://www.linkedin.com/in/imvikasyadav"
-              title='LinkedIn'
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
-            </a>
-            <a
-              href="https://github.com/VikasYadav14"
-              title='GitHub'
-              target="_blank"
-              rel="noreferrer"
-            >
-              <FaGithub size={20} style={{ marginRight: '1rem' }} />
-            </a>
-          </div></>
-      )},
-      bye: {content:'Goodbye! 🙋‍♂️ Have a great day!'},
-      default: {content:'I am sorry 😥, but I am not able to understand your message.'},
+      'social media': {
+        content: (
+          <>
+            <p>Here&apos;s are my social media links😎</p>
+            <div className="flex justify-center">
+              <a
+                href="https://www.linkedin.com/in/imvikasyadav"
+                title='LinkedIn'
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaLinkedinIn size={20} style={{ marginRight: '1rem' }} />
+              </a>
+              <a
+                href="https://github.com/VikasYadav14"
+                title='GitHub'
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaGithub size={20} style={{ marginRight: '1rem' }} />
+              </a>
+            </div></>
+        )
+      },
+      bye: { content: 'Goodbye! 🙋‍♂️ Have a great day!' },
+      default: { content: 'I am sorry 😥, but I am not able to understand your message.' },
     };
     userInput = userInput.toLowerCase();
     if (userInput in BOT_RESPONSES) {

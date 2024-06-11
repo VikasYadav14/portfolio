@@ -8,7 +8,7 @@ import ResumeImg from '../public/Vikas_Resume.jpg';
 
 const Resume = () => {
   useEffect(() => {
-    toast.info('This resume was last updated in december 2023.', {
+    toast.info('This resume was last updated in May 2024.', {
       position: "top-right",
       autoClose: false,
       hideProgressBar: false,
@@ -27,7 +27,7 @@ const Resume = () => {
         <title>Vikas | Resume</title>
         <meta
           name="description"
-          content="I’m a back-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
+          content="I&apos;m a back-end web developer specializing in building (and occasionally designing) exceptional digital experiences."
         />
         <link rel="icon" href="/fav.png" />
       </Head>

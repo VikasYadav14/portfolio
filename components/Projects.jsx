@@ -1,5 +1,7 @@
 import React from 'react';
+import JanusImg from '../public/assets/projects/Janus.png';
 import BlogImg from '../public/assets/projects/Blog-Management.jpeg';
+import AsianImg from '../public/assets/projects/Asian.png';
 import BookImg from '../public/assets/projects/Book-Management.jpeg';
 import UrlImg from '../public/assets/projects/Url-shortener.jpeg';
 import ShopImg from '../public/assets/projects/shopping-cart.jpg';
@@ -14,6 +16,18 @@ const Projects = () => {
         </p>
         <h2 className="py-4">What I&apos;ve Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
+          <ProjectItem
+            title="Asian Ceramics"
+            backgroundImg={AsianImg}
+            projectUrl="/asian-ceramics"
+            tech="TypeScript, NextJS, MYSQL"
+          />
+          <ProjectItem
+            title="Janus Solutions Group"
+            backgroundImg={JanusImg}
+            projectUrl="/janussolutionsgroup"
+            tech="HTML, TailwindCSS, JavaScript"
+          />
           <ProjectItem
             title="Blogging Site"
             backgroundImg={BlogImg}

@@ -56,7 +56,7 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-          <h1 className='text-[#5651e5] text-3xl'>
+          <h1 className='text-[#5651e5] text-3xl cursor-pointer'>
             Vikas
           </h1>
         </Link>

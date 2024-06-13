@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import React from 'react';
-import BlogImg from '../public/assets/projects/Blog-Management.jpeg';
+import JanusImg from '../public/assets/projects/Janus.png';
 import { RiRadioButtonFill } from 'react-icons/ri';
 import Link from 'next/link';
 
@@ -13,7 +13,7 @@ const Blogging = () => {
           className='absolute z-1'
           layout='fill'
           objectFit='cover'
-          src={BlogImg}
+          src={JanusImg}
           alt='/'
         />
         <div className='absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
@@ -35,10 +35,10 @@ const Blogging = () => {
             fostering meaningful connections and potential collaborations.
           </p>
           <p>
-            For more info about the project checkout the Github link given below
+            To view the project visit on the link given below
           </p>
           <a
-            href='https://janussolutionsgroup.com/'
+            href='https://janus-nine.vercel.app/'
             target='_blank'
             rel='noreferrer'
           >

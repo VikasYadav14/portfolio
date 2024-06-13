@@ -56,13 +56,9 @@ const Navbar = () => {
     >
       <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
         <Link href='/'>
-            <Image
-              src={NavLogo}
-              alt='/'
-              width='125'
-              height='50'
-              className='cursor-pointer'
-            />
+          <h1 className='text-[#5651e5] text-3xl'>
+            Vikas
+          </h1>
         </Link>
         <div>
           <ul style={{ color: `${linkColor}` }} className='hidden md:flex'>
@@ -114,12 +110,12 @@ const Navbar = () => {
           <div>
             <div className='flex w-full items-center justify-between'>
               <Link href='/'>
-                  <Image
-                    src={NavLogo}
-                    width='87'
-                    height='35'
-                    alt='/'
-                  />
+                <Image
+                  src={NavLogo}
+                  width='87'
+                  height='35'
+                  alt='/'
+                />
               </Link>
               <div
                 onClick={handleNav}

@@ -143,7 +143,7 @@ const ChatBot = () => {
         )
       },
       bye: { content: 'Goodbye! 🙋‍♂️ Have a great day!' },
-      default: { content: 'I am sorry 😥, but I am not able to understand your message.' },
+      default: { content: "I'm sorry 😥, but I didn't quite understand that." },
     };
     userInput = userInput.toLowerCase();
     if (userInput in BOT_RESPONSES) {

@@ -39,7 +39,7 @@ const Blogging = () => {
             communication and storage capabilities, ensuring a seamless user experience.
           </p>
           <p>
-            For more info about the project checkout the Github link given below
+            To view the project visit on the link given below
           </p>
           <a
             href='https://asian-ceramics.vercel.app/'
